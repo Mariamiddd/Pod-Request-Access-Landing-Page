@@ -109,11 +109,10 @@ body{
 .error-message{
     order: 2;
     position: relative;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 10px -90px;
     font-size: 12px;
     font-weight: 400;
     color: #FB3E3E; 
-    left: -11%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -168,7 +167,7 @@ body{
 }
 .error-message{
     align-self: flex-start;
-    margin-left: 105px;
+    margin-left: 30px;
     order: 2;
 }
 .form{
@@ -184,10 +183,10 @@ body{
 }
 .dots{
     order: 5;
-    display: block;
-    position: relative;
-    height: 104px;
-    width: 232px;
+    display: flex;
+    position: absolute;
+    margin-left: 39px;
+    bottom: -40%;
     z-index: 1;
 }
 }
@@ -219,9 +218,10 @@ body{
         font-size: 18px;
         line-height: 28px;
     }
-    .error-message{
-        left: 4%;
+    .btn{
+        margin-left: -25px;
     }
+
     .app-icons{
         gap: 30px;
     }
@@ -229,7 +229,10 @@ body{
         width: 16%;
     }
     .dots{
-        display: block;
+        display: flex;
         position: absolute;
+        right: 0;
+        margin: 0;
+        bottom: -11.4%;
     }
 }
