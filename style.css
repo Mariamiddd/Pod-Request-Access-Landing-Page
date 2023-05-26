@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Chivo', sans-serif;
+    background: #121725;
+}
+.tablet-singer-img, .desktop-singer-img, .dots{
+    display: none;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 62px 0 57px 0;
+}
+.mobile-singer-img{
+    width: 100%;
+    opacity: 0.1;
+}
+.img-layover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #121725;
+    opacity: 1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.container h1{
+    max-width: 22ch;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 100;
+    line-height: 38px;
+    color: #54E6AF;    
+}
+.container span{
+    color: #FFFFFF;
+}
+.container p{
+    margin: 16px auto 36px auto;
+    max-width: 35ch;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: #C2CBE5;
+}
+.app-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 30px 50px 30px;
+    align-items: center;
+}
+.app-icons img{
+    width: 59%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    height: 46px;
+    width: 327px;
+    border-radius: 28px;
+    border: none;
+    padding-left: 32px;
+    opacity: 0.5;
+    background: #2C344B;
+    color: #FFFFFF;
+
+}
+.btn{
+    display: block;
+    height: 46px;
+    width: 326px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 28px;
+    border: none;
+    background: #54E6AF;
+    color: #121725;  
+}
+.error-message{
+    position: relative;
+    margin: 5px 0 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FB3E3E; 
+    left: -11%;
+}
+
+@media only screen and (min-width: 768px) {
+.mobile-singer-img, .desktop-singer-img{
+    display: none;
+}
+.icon{
+    justify-content:flex-start;
+    padding: 50px 0 152px 39px;
+}
+.tablet-singer-img{
+    position: relative;
+    display: flex;
+    float: right;
+}
+.container{
+    position: absolute;
+    margin-left: 39px;
+    background: #121725;
+}
+.container h1{
+    padding-top: 93px;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0px;  
+    text-align: left;
+}
+.container p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 31px 0 40px 0;
+}
+.input{
+    position: relative;
+    height: 56px;
+    width: 427px;
+}
+.btn{
+    position: relative;
+    height: 46px;
+    width: 162px;
+    text-align: left;
+    right: 170px;
+    padding-left: 27px;
+}
+.error-message{
+    position: absolute;
+    bottom: 110px;
+    left: 5%;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    order: 1;
+}
+.app-icons{
+    margin-top: 65px;
+    margin-left: 0;
+    order: 2;
+}
+.app-icons img{
+    width: 13.5%;
+}
+.dots{
+    display: block;
+    position: absolute;
+    height: 104px;
+    width: 232px;
+    z-index: 1;
+    margin-left: 39px;
+    top: 110%;
+}
+}
+@media only screen and (min-width: 1060px) {
+    .tablet-singer-img{
+        display: none;
+    }
+    .desktop-singer-img{
+        position: relative;
+        display: flex;
+        float: right;
+        margin-top: 130px;
+        opacity: 0.8;
+    }
+    .icon{
+        padding: 102px 0 103px 165px;
+    }
+    .container{
+        margin-left: 165px;
+    }
+    .container h1{
+        width: 28ch;
+        padding-top: 88px;
+        font-size: 52px;
+        line-height: 62px; 
+    }
+    .container p{
+        max-width: 40ch;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .error-message{
+        left: 4%;
+    }
+    .app-icons{
+        gap: 30px;
+    }
+    .app-icons img{
+        width: 14%;
+    }
+    .dots{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 720px;
+    }
+}
