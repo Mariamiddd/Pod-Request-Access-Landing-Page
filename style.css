@@ -129,7 +129,9 @@ body{
     float: right;
 }
 .container{
-    position: absolute;
+    position: relative;
+    height: 509px;
+    width: 635px;
     margin-left: 39px;
     background: #121725;
 }
@@ -139,6 +141,7 @@ body{
     line-height: 56px;
     letter-spacing: 0px;  
     text-align: left;
+    margin-left: 0;
 }
 .container p{
     font-size: 18px;
@@ -159,7 +162,7 @@ body{
     order: 1;
     position: absolute;
     margin-top: 5px;
-    margin-left: 30px;
+    margin-left: 40px;
     height: 46px;
     width: 162px;
     text-align: left;
@@ -181,13 +184,15 @@ body{
 .app-icons img{
     width: 17.5%;
 }
-.dots{
-    order: 5;
+
+.wrapper{
     display: flex;
-    position: absolute;
-    margin-left: 39px;
-    bottom: -40%;
-    z-index: 1;
+    flex-direction: column;
+}
+.dots {
+    position: relative;
+    display: flex;
+    z-index: 4;
 }
 }
 @media only screen and (min-width: 1060px) {
@@ -206,6 +211,7 @@ body{
     }
     .container{
         margin-left: 165px;
+        width: 723px;
     }
     .container h1{
         width: 28ch;
@@ -219,7 +225,7 @@ body{
         line-height: 28px;
     }
     .btn{
-        margin-left: -25px;
+        margin-left: -45px;
     }
 
     .app-icons{
@@ -228,11 +234,5 @@ body{
     .app-icons img{
         width: 16%;
     }
-    .dots{
-        display: flex;
-        position: absolute;
-        right: 0;
-        margin: 0;
-        bottom: -11.4%;
-    }
+
 }
