@@ -192,6 +192,8 @@ body{
 .dots {
     position: relative;
     display: flex;
+    margin-top: 150px;
+    margin-left: 39px;
     z-index: 4;
 }
 }
@@ -230,9 +232,16 @@ body{
 
     .app-icons{
         gap: 30px;
+        padding-bottom: 80px;
     }
     .app-icons img{
         width: 16%;
     }
-
+    .dots {
+        position: absolute;
+        display: flex;
+        margin-top: -50px;
+        right: 0;
+        z-index: 4;
+    }
 }
